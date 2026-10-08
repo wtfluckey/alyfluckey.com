@@ -24,7 +24,7 @@ Parameters:
 
   GitHubRepo:
     Type: String
-    Default: wtfluckey.com
+    Default: alyfluckey.com
 
 Resources:
   # S3 bucket for site content - no public access, CloudFront OAC handles reads
@@ -210,7 +210,8 @@ Resources:
       ClientIdList:
         - sts.amazonaws.com
       ThumbprintList:
-        - ffffffffffffffffffffffffffffffffffffffff
+        - 6938fd4d98bab03faadb97b34396831e3780aea1
+        - 1c58a3a8518e8759bf075b76b750d4f2df264fcd
 
   # IAM role for GitHub Actions deployments
   GitHubActionsRole:
